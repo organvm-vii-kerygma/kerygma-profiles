@@ -8,7 +8,7 @@ specific profile matches.
 from __future__ import annotations
 
 import logging
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
 
@@ -43,9 +43,18 @@ class ProfileRegistry:
         count = 0
         if not profiles_dir.is_dir():
             return count
+        repo_owners: dict[str, str] = {}  # repo_name -> profile_id
         for yaml_file in sorted(profiles_dir.glob("*.yaml")):
             profile = self._load_profile(yaml_file)
             if profile:
+                for repo in profile.repos:
+                    if repo in repo_owners:
+                        logger.warning(
+                            "Repo '%s' claimed by both '%s' and '%s' — first wins",
+                            repo, repo_owners[repo], profile.profile_id,
+                        )
+                    else:
+                        repo_owners[repo] = profile.profile_id
                 self._profiles[profile.profile_id] = profile
                 count += 1
         return count

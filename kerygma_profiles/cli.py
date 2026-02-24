@@ -53,7 +53,7 @@ def main(argv: list[str] | None = None) -> int:
     elif args.command == "show":
         return _cmd_show(registry, args.profile_id)
     elif args.command == "validate":
-        return _cmd_validate(registry, args.profile_id)
+        return cmd_validate(registry, args.profile_id)
     return 0
 
 
@@ -79,7 +79,7 @@ def _cmd_show(registry: ProfileRegistry, profile_id: str) -> int:
         "organ": profile.organ,
         "repos": profile.repos,
         "voice": profile.voice,
-        "platforms": _redact_secrets(profile.platforms),
+        "platforms": redact_secrets(profile.platforms),
         "channels": profile.channels,
         "rss_feed_url": profile.rss_feed_url,
     }
@@ -87,7 +87,7 @@ def _cmd_show(registry: ProfileRegistry, profile_id: str) -> int:
     return 0
 
 
-def _redact_secrets(platforms: dict) -> dict:
+def redact_secrets(platforms: dict) -> dict:
     """Redact secret values in platform config for display."""
     redacted = {}
     for platform, creds in platforms.items():
@@ -105,7 +105,7 @@ def _redact_secrets(platforms: dict) -> dict:
     return redacted
 
 
-def _cmd_validate(registry: ProfileRegistry, profile_id: str | None) -> int:
+def cmd_validate(registry: ProfileRegistry, profile_id: str | None) -> int:
     if profile_id:
         profiles = [registry.get(profile_id)]
         profiles = [p for p in profiles if p is not None]
