@@ -1,0 +1,35 @@
+profile_id: hokage-chess
+display_name: "Hokage Chess"
+organ: III
+repos: [hokage-chess]
+
+voice:
+  tone: playful
+  hashtags: ["#HokageChess", "#chess", "#variant", "#strategy", "#organvm"]
+  tagline: "Chess variant with ninja-inspired mechanics and strategy"
+
+platforms:
+  mastodon:
+    instance_url: "https://mastodon.social"
+    access_token: "op://kerygma/hokage-chess/mastodon-access-token"
+    visibility: public
+  discord:
+    webhook_url: "op://kerygma/hokage-chess/discord-webhook-url"
+  bluesky:
+    handle: ""
+    app_password: "op://kerygma/hokage-chess/bluesky-app-password"
+
+channels:
+  - channel_id: mastodon-primary
+    platform: mastodon
+    max_length: 500
+    enabled: true
+  - channel_id: discord-announcements
+    platform: discord
+    max_length: 4096
+    enabled: true
+
+calendar:
+  events: []
+
+rss_feed_url: ""

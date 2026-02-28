@@ -1,0 +1,35 @@
+profile_id: fetch-familiar-friends
+display_name: "DogTale Daily"
+organ: III
+repos: [fetch-familiar-friends]
+
+voice:
+  tone: playful
+  hashtags: ["#DogTaleDaily", "#pets", "#dailydog", "#dailycat", "#organvm"]
+  tagline: "Your daily dose of dog and cat joy with journaling and community"
+
+platforms:
+  mastodon:
+    instance_url: "https://mastodon.social"
+    access_token: "op://kerygma/fetch-familiar-friends/mastodon-access-token"
+    visibility: public
+  discord:
+    webhook_url: "op://kerygma/fetch-familiar-friends/discord-webhook-url"
+  bluesky:
+    handle: ""
+    app_password: "op://kerygma/fetch-familiar-friends/bluesky-app-password"
+
+channels:
+  - channel_id: mastodon-primary
+    platform: mastodon
+    max_length: 500
+    enabled: true
+  - channel_id: discord-announcements
+    platform: discord
+    max_length: 4096
+    enabled: true
+
+calendar:
+  events: []
+
+rss_feed_url: ""

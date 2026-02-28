@@ -1,0 +1,35 @@
+profile_id: anon-hookup-now
+display_name: "GrindrPlus"
+organ: III
+repos: [anon-hookup-now]
+
+voice:
+  tone: technical
+  hashtags: ["#GrindrPlus", "#android", "#xposed", "#modding", "#organvm"]
+  tagline: "Enhanced Grindr experience via Xposed framework"
+
+platforms:
+  mastodon:
+    instance_url: "https://mastodon.social"
+    access_token: "op://kerygma/anon-hookup-now/mastodon-access-token"
+    visibility: public
+  discord:
+    webhook_url: "op://kerygma/anon-hookup-now/discord-webhook-url"
+  bluesky:
+    handle: ""
+    app_password: "op://kerygma/anon-hookup-now/bluesky-app-password"
+
+channels:
+  - channel_id: mastodon-primary
+    platform: mastodon
+    max_length: 500
+    enabled: true
+  - channel_id: discord-announcements
+    platform: discord
+    max_length: 4096
+    enabled: true
+
+calendar:
+  events: []
+
+rss_feed_url: ""

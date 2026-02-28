@@ -1,0 +1,35 @@
+profile_id: classroom-rpg-aetheria
+display_name: "Classroom RPG Aetheria"
+organ: III
+repos: [classroom-rpg-aetheria]
+
+voice:
+  tone: playful
+  hashtags: ["#ClassroomRPG", "#gamification", "#edtech", "#Aetheria", "#organvm"]
+  tagline: "Fantasy-themed classroom gamification across four worlds"
+
+platforms:
+  mastodon:
+    instance_url: "https://mastodon.social"
+    access_token: "op://kerygma/classroom-rpg-aetheria/mastodon-access-token"
+    visibility: public
+  discord:
+    webhook_url: "op://kerygma/classroom-rpg-aetheria/discord-webhook-url"
+  bluesky:
+    handle: ""
+    app_password: "op://kerygma/classroom-rpg-aetheria/bluesky-app-password"
+
+channels:
+  - channel_id: mastodon-primary
+    platform: mastodon
+    max_length: 500
+    enabled: true
+  - channel_id: discord-announcements
+    platform: discord
+    max_length: 4096
+    enabled: true
+
+calendar:
+  events: []
+
+rss_feed_url: ""

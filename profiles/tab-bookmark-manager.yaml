@@ -1,0 +1,35 @@
+profile_id: tab-bookmark-manager
+display_name: "AI Tab Manager"
+organ: III
+repos: [tab-bookmark-manager]
+
+voice:
+  tone: technical
+  hashtags: ["#AITabManager", "#productivity", "#browser", "#bookmarks", "#organvm"]
+  tagline: "AI-powered tab and bookmark management with semantic clustering"
+
+platforms:
+  mastodon:
+    instance_url: "https://mastodon.social"
+    access_token: "op://kerygma/tab-bookmark-manager/mastodon-access-token"
+    visibility: public
+  discord:
+    webhook_url: "op://kerygma/tab-bookmark-manager/discord-webhook-url"
+  bluesky:
+    handle: ""
+    app_password: "op://kerygma/tab-bookmark-manager/bluesky-app-password"
+
+channels:
+  - channel_id: mastodon-primary
+    platform: mastodon
+    max_length: 500
+    enabled: true
+  - channel_id: discord-announcements
+    platform: discord
+    max_length: 4096
+    enabled: true
+
+calendar:
+  events: []
+
+rss_feed_url: ""

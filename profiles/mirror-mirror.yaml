@@ -1,0 +1,35 @@
+profile_id: mirror-mirror
+display_name: "Mirror Mirror"
+organ: III
+repos: [mirror-mirror]
+
+voice:
+  tone: playful
+  hashtags: ["#MirrorMirror", "#selfcare", "#reflection", "#webapp", "#organvm"]
+  tagline: "Look inward, reflect outward"
+
+platforms:
+  mastodon:
+    instance_url: "https://mastodon.social"
+    access_token: "op://kerygma/mirror-mirror/mastodon-access-token"
+    visibility: public
+  discord:
+    webhook_url: "op://kerygma/mirror-mirror/discord-webhook-url"
+  bluesky:
+    handle: ""
+    app_password: "op://kerygma/mirror-mirror/bluesky-app-password"
+
+channels:
+  - channel_id: mastodon-primary
+    platform: mastodon
+    max_length: 500
+    enabled: true
+  - channel_id: discord-announcements
+    platform: discord
+    max_length: 4096
+    enabled: true
+
+calendar:
+  events: []
+
+rss_feed_url: ""

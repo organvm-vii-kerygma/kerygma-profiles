@@ -1,0 +1,35 @@
+profile_id: the-invisible-ledger
+display_name: "The Invisible Ledger"
+organ: III
+repos: [the-invisible-ledger]
+
+voice:
+  tone: professional
+  hashtags: ["#InvisibleLedger", "#finance", "#transparency", "#data", "#organvm"]
+  tagline: "Revealing the hidden flows of financial data"
+
+platforms:
+  mastodon:
+    instance_url: "https://mastodon.social"
+    access_token: "op://kerygma/the-invisible-ledger/mastodon-access-token"
+    visibility: public
+  discord:
+    webhook_url: "op://kerygma/the-invisible-ledger/discord-webhook-url"
+  bluesky:
+    handle: ""
+    app_password: "op://kerygma/the-invisible-ledger/bluesky-app-password"
+
+channels:
+  - channel_id: mastodon-primary
+    platform: mastodon
+    max_length: 500
+    enabled: true
+  - channel_id: discord-announcements
+    platform: discord
+    max_length: 4096
+    enabled: true
+
+calendar:
+  events: []
+
+rss_feed_url: ""

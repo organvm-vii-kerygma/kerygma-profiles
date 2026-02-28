@@ -1,0 +1,35 @@
+profile_id: multi-camera--livestream--framework
+display_name: "4K Livestream Pipeline"
+organ: III
+repos: [multi-camera--livestream--framework]
+
+voice:
+  tone: technical
+  hashtags: ["#4KLivestream", "#multicamera", "#streaming", "#Dante", "#organvm"]
+  tagline: "Multi-camera 4K livestream pipeline with Dante audio integration"
+
+platforms:
+  mastodon:
+    instance_url: "https://mastodon.social"
+    access_token: "op://kerygma/multi-camera--livestream--framework/mastodon-access-token"
+    visibility: public
+  discord:
+    webhook_url: "op://kerygma/multi-camera--livestream--framework/discord-webhook-url"
+  bluesky:
+    handle: ""
+    app_password: "op://kerygma/multi-camera--livestream--framework/bluesky-app-password"
+
+channels:
+  - channel_id: mastodon-primary
+    platform: mastodon
+    max_length: 500
+    enabled: true
+  - channel_id: discord-announcements
+    platform: discord
+    max_length: 4096
+    enabled: true
+
+calendar:
+  events: []
+
+rss_feed_url: ""

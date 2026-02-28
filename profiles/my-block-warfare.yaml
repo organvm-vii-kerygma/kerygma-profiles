@@ -1,0 +1,35 @@
+profile_id: my-block-warfare
+display_name: "TurfSynth AR"
+organ: III
+repos: [my-block-warfare]
+
+voice:
+  tone: playful
+  hashtags: ["#TurfSynthAR", "#ARgaming", "#locationbased", "#mobilegames", "#organvm"]
+  tagline: "Location-based AR territorial warfare on your block"
+
+platforms:
+  mastodon:
+    instance_url: "https://mastodon.social"
+    access_token: "op://kerygma/my-block-warfare/mastodon-access-token"
+    visibility: public
+  discord:
+    webhook_url: "op://kerygma/my-block-warfare/discord-webhook-url"
+  bluesky:
+    handle: ""
+    app_password: "op://kerygma/my-block-warfare/bluesky-app-password"
+
+channels:
+  - channel_id: mastodon-primary
+    platform: mastodon
+    max_length: 500
+    enabled: true
+  - channel_id: discord-announcements
+    platform: discord
+    max_length: 4096
+    enabled: true
+
+calendar:
+  events: []
+
+rss_feed_url: ""

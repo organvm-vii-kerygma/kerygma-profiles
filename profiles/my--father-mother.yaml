@@ -1,0 +1,35 @@
+profile_id: my--father-mother
+display_name: "Clipboard Memory"
+organ: III
+repos: [my--father-mother]
+
+voice:
+  tone: technical
+  hashtags: ["#ClipboardMemory", "#productivity", "#CLI", "#semanticsearch", "#organvm"]
+  tagline: "Local clipboard memory with full-text and semantic search"
+
+platforms:
+  mastodon:
+    instance_url: "https://mastodon.social"
+    access_token: "op://kerygma/my--father-mother/mastodon-access-token"
+    visibility: public
+  discord:
+    webhook_url: "op://kerygma/my--father-mother/discord-webhook-url"
+  bluesky:
+    handle: ""
+    app_password: "op://kerygma/my--father-mother/bluesky-app-password"
+
+channels:
+  - channel_id: mastodon-primary
+    platform: mastodon
+    max_length: 500
+    enabled: true
+  - channel_id: discord-announcements
+    platform: discord
+    max_length: 4096
+    enabled: true
+
+calendar:
+  events: []
+
+rss_feed_url: ""

@@ -1,0 +1,35 @@
+profile_id: search-local--happy-hour
+display_name: "Happy Hour Discovery"
+organ: III
+repos: [search-local--happy-hour]
+
+voice:
+  tone: playful
+  hashtags: ["#HappyHour", "#localdeals", "#nightlife", "#social", "#organvm"]
+  tagline: "Discover the best happy hour deals near you"
+
+platforms:
+  mastodon:
+    instance_url: "https://mastodon.social"
+    access_token: "op://kerygma/search-local--happy-hour/mastodon-access-token"
+    visibility: public
+  discord:
+    webhook_url: "op://kerygma/search-local--happy-hour/discord-webhook-url"
+  bluesky:
+    handle: ""
+    app_password: "op://kerygma/search-local--happy-hour/bluesky-app-password"
+
+channels:
+  - channel_id: mastodon-primary
+    platform: mastodon
+    max_length: 500
+    enabled: true
+  - channel_id: discord-announcements
+    platform: discord
+    max_length: 4096
+    enabled: true
+
+calendar:
+  events: []
+
+rss_feed_url: ""

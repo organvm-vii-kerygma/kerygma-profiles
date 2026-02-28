@@ -1,0 +1,35 @@
+profile_id: gamified-coach-interface
+display_name: "Legion Command Center"
+organ: III
+repos: [gamified-coach-interface]
+
+voice:
+  tone: playful
+  hashtags: ["#LegionCommand", "#fitness", "#gamification", "#coaching", "#organvm"]
+  tagline: "Gamified fitness coaching with 3D command center interface"
+
+platforms:
+  mastodon:
+    instance_url: "https://mastodon.social"
+    access_token: "op://kerygma/gamified-coach-interface/mastodon-access-token"
+    visibility: public
+  discord:
+    webhook_url: "op://kerygma/gamified-coach-interface/discord-webhook-url"
+  bluesky:
+    handle: ""
+    app_password: "op://kerygma/gamified-coach-interface/bluesky-app-password"
+
+channels:
+  - channel_id: mastodon-primary
+    platform: mastodon
+    max_length: 500
+    enabled: true
+  - channel_id: discord-announcements
+    platform: discord
+    max_length: 4096
+    enabled: true
+
+calendar:
+  events: []
+
+rss_feed_url: ""

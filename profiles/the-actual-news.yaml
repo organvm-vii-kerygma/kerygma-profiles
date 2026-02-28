@@ -1,0 +1,35 @@
+profile_id: the-actual-news
+display_name: "The Actual News"
+organ: III
+repos: [the-actual-news]
+
+voice:
+  tone: professional
+  hashtags: ["#TheActualNews", "#journalism", "#news", "#media", "#organvm"]
+  tagline: "News platform built on transparency and factual reporting"
+
+platforms:
+  mastodon:
+    instance_url: "https://mastodon.social"
+    access_token: "op://kerygma/the-actual-news/mastodon-access-token"
+    visibility: public
+  discord:
+    webhook_url: "op://kerygma/the-actual-news/discord-webhook-url"
+  bluesky:
+    handle: ""
+    app_password: "op://kerygma/the-actual-news/bluesky-app-password"
+
+channels:
+  - channel_id: mastodon-primary
+    platform: mastodon
+    max_length: 500
+    enabled: true
+  - channel_id: discord-announcements
+    platform: discord
+    max_length: 4096
+    enabled: true
+
+calendar:
+  events: []
+
+rss_feed_url: ""

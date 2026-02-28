@@ -1,0 +1,35 @@
+profile_id: sovereign-ecosystem--real-estate-luxury
+display_name: "Sovereign Real Estate"
+organ: III
+repos: [sovereign-ecosystem--real-estate-luxury]
+
+voice:
+  tone: professional
+  hashtags: ["#SovereignRealEstate", "#luxury", "#realestate", "#proptech", "#organvm"]
+  tagline: "Premium real estate platform for luxury property ecosystems"
+
+platforms:
+  mastodon:
+    instance_url: "https://mastodon.social"
+    access_token: "op://kerygma/sovereign-ecosystem--real-estate-luxury/mastodon-access-token"
+    visibility: public
+  discord:
+    webhook_url: "op://kerygma/sovereign-ecosystem--real-estate-luxury/discord-webhook-url"
+  bluesky:
+    handle: ""
+    app_password: "op://kerygma/sovereign-ecosystem--real-estate-luxury/bluesky-app-password"
+
+channels:
+  - channel_id: mastodon-primary
+    platform: mastodon
+    max_length: 500
+    enabled: true
+  - channel_id: discord-announcements
+    platform: discord
+    max_length: 4096
+    enabled: true
+
+calendar:
+  events: []
+
+rss_feed_url: ""

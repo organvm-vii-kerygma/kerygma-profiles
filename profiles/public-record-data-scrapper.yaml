@@ -1,0 +1,35 @@
+profile_id: public-record-data-scrapper
+display_name: "UCC-MCA Intelligence Platform"
+organ: III
+repos: [public-record-data-scrapper]
+
+voice:
+  tone: professional
+  hashtags: ["#UCCIntelligence", "#fintech", "#leadgen", "#MCA", "#organvm"]
+  tagline: "AI-powered UCC filing analysis for Merchant Cash Advance lead generation"
+
+platforms:
+  mastodon:
+    instance_url: "https://mastodon.social"
+    access_token: "op://kerygma/public-record-data-scrapper/mastodon-access-token"
+    visibility: public
+  discord:
+    webhook_url: "op://kerygma/public-record-data-scrapper/discord-webhook-url"
+  bluesky:
+    handle: ""
+    app_password: "op://kerygma/public-record-data-scrapper/bluesky-app-password"
+
+channels:
+  - channel_id: mastodon-primary
+    platform: mastodon
+    max_length: 500
+    enabled: true
+  - channel_id: discord-announcements
+    platform: discord
+    max_length: 4096
+    enabled: true
+
+calendar:
+  events: []
+
+rss_feed_url: ""

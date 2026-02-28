@@ -1,0 +1,35 @@
+profile_id: universal-mail--automation
+display_name: "Universal Mail"
+organ: III
+repos: [universal-mail--automation]
+
+voice:
+  tone: professional
+  hashtags: ["#UniversalMail", "#email", "#automation", "#marketing", "#organvm"]
+  tagline: "Multi-provider email automation for scalable outreach"
+
+platforms:
+  mastodon:
+    instance_url: "https://mastodon.social"
+    access_token: "op://kerygma/universal-mail--automation/mastodon-access-token"
+    visibility: public
+  discord:
+    webhook_url: "op://kerygma/universal-mail--automation/discord-webhook-url"
+  bluesky:
+    handle: ""
+    app_password: "op://kerygma/universal-mail--automation/bluesky-app-password"
+
+channels:
+  - channel_id: mastodon-primary
+    platform: mastodon
+    max_length: 500
+    enabled: true
+  - channel_id: discord-announcements
+    platform: discord
+    max_length: 4096
+    enabled: true
+
+calendar:
+  events: []
+
+rss_feed_url: ""

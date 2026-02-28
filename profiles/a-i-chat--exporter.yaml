@@ -1,0 +1,35 @@
+profile_id: a-i-chat--exporter
+display_name: "ChatGPT Exporter"
+organ: III
+repos: [a-i-chat--exporter]
+
+voice:
+  tone: technical
+  hashtags: ["#ChatGPTExporter", "#AI", "#dataportability", "#browser", "#organvm"]
+  tagline: "Export and own your ChatGPT conversation history"
+
+platforms:
+  mastodon:
+    instance_url: "https://mastodon.social"
+    access_token: "op://kerygma/a-i-chat--exporter/mastodon-access-token"
+    visibility: public
+  discord:
+    webhook_url: "op://kerygma/a-i-chat--exporter/discord-webhook-url"
+  bluesky:
+    handle: ""
+    app_password: "op://kerygma/a-i-chat--exporter/bluesky-app-password"
+
+channels:
+  - channel_id: mastodon-primary
+    platform: mastodon
+    max_length: 500
+    enabled: true
+  - channel_id: discord-announcements
+    platform: discord
+    max_length: 4096
+    enabled: true
+
+calendar:
+  events: []
+
+rss_feed_url: ""

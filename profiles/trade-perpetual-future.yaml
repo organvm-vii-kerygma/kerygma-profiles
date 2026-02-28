@@ -1,0 +1,35 @@
+profile_id: trade-perpetual-future
+display_name: "Perpetual Futures Exchange"
+organ: III
+repos: [trade-perpetual-future]
+
+voice:
+  tone: professional
+  hashtags: ["#PerpFutures", "#trading", "#DeFi", "#derivatives", "#organvm"]
+  tagline: "Perpetual futures exchange interface for decentralized derivatives"
+
+platforms:
+  mastodon:
+    instance_url: "https://mastodon.social"
+    access_token: "op://kerygma/trade-perpetual-future/mastodon-access-token"
+    visibility: public
+  discord:
+    webhook_url: "op://kerygma/trade-perpetual-future/discord-webhook-url"
+  bluesky:
+    handle: ""
+    app_password: "op://kerygma/trade-perpetual-future/bluesky-app-password"
+
+channels:
+  - channel_id: mastodon-primary
+    platform: mastodon
+    max_length: 500
+    enabled: true
+  - channel_id: discord-announcements
+    platform: discord
+    max_length: 4096
+    enabled: true
+
+calendar:
+  events: []
+
+rss_feed_url: ""

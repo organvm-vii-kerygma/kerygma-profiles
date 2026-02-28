@@ -1,0 +1,35 @@
+profile_id: your-fit-tailored
+display_name: "Circular Apparel"
+organ: III
+repos: [your-fit-tailored]
+
+voice:
+  tone: professional
+  hashtags: ["#CircularApparel", "#sustainability", "#fashion", "#subscription", "#organvm"]
+  tagline: "Circular apparel subscription for sustainable fashion"
+
+platforms:
+  mastodon:
+    instance_url: "https://mastodon.social"
+    access_token: "op://kerygma/your-fit-tailored/mastodon-access-token"
+    visibility: public
+  discord:
+    webhook_url: "op://kerygma/your-fit-tailored/discord-webhook-url"
+  bluesky:
+    handle: ""
+    app_password: "op://kerygma/your-fit-tailored/bluesky-app-password"
+
+channels:
+  - channel_id: mastodon-primary
+    platform: mastodon
+    max_length: 500
+    enabled: true
+  - channel_id: discord-announcements
+    platform: discord
+    max_length: 4096
+    enabled: true
+
+calendar:
+  events: []
+
+rss_feed_url: ""

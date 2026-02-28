@@ -1,0 +1,35 @@
+profile_id: card-trade-social
+display_name: "Hydra TCG Platform"
+organ: III
+repos: [card-trade-social]
+
+voice:
+  tone: playful
+  hashtags: ["#HydraTCG", "#trading", "#cardgames", "#marketplace", "#organvm"]
+  tagline: "Social trading card game marketplace with collection tracking"
+
+platforms:
+  mastodon:
+    instance_url: "https://mastodon.social"
+    access_token: "op://kerygma/card-trade-social/mastodon-access-token"
+    visibility: public
+  discord:
+    webhook_url: "op://kerygma/card-trade-social/discord-webhook-url"
+  bluesky:
+    handle: ""
+    app_password: "op://kerygma/card-trade-social/bluesky-app-password"
+
+channels:
+  - channel_id: mastodon-primary
+    platform: mastodon
+    max_length: 500
+    enabled: true
+  - channel_id: discord-announcements
+    platform: discord
+    max_length: 4096
+    enabled: true
+
+calendar:
+  events: []
+
+rss_feed_url: ""

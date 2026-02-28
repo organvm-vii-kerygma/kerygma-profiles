@@ -1,0 +1,35 @@
+profile_id: peer-audited--behavioral-blockchain
+display_name: "Styx Behavioral Market"
+organ: III
+repos: [peer-audited--behavioral-blockchain]
+
+voice:
+  tone: technical
+  hashtags: ["#Styx", "#behavioral", "#blockchain", "#peeraudit", "#organvm"]
+  tagline: "Peer-audited behavioral market with on-chain accountability"
+
+platforms:
+  mastodon:
+    instance_url: "https://mastodon.social"
+    access_token: "op://kerygma/peer-audited--behavioral-blockchain/mastodon-access-token"
+    visibility: public
+  discord:
+    webhook_url: "op://kerygma/peer-audited--behavioral-blockchain/discord-webhook-url"
+  bluesky:
+    handle: ""
+    app_password: "op://kerygma/peer-audited--behavioral-blockchain/bluesky-app-password"
+
+channels:
+  - channel_id: mastodon-primary
+    platform: mastodon
+    max_length: 500
+    enabled: true
+  - channel_id: discord-announcements
+    platform: discord
+    max_length: 4096
+    enabled: true
+
+calendar:
+  events: []
+
+rss_feed_url: ""

@@ -1,0 +1,35 @@
+profile_id: select-or-left-or-right-or
+display_name: "Social Network"
+organ: III
+repos: [select-or-left-or-right-or]
+
+voice:
+  tone: playful
+  hashtags: ["#SelectOrSwipe", "#socialnetwork", "#connections", "#community", "#organvm"]
+  tagline: "Swipe-based social connections — left, right, or something else"
+
+platforms:
+  mastodon:
+    instance_url: "https://mastodon.social"
+    access_token: "op://kerygma/select-or-left-or-right-or/mastodon-access-token"
+    visibility: public
+  discord:
+    webhook_url: "op://kerygma/select-or-left-or-right-or/discord-webhook-url"
+  bluesky:
+    handle: ""
+    app_password: "op://kerygma/select-or-left-or-right-or/bluesky-app-password"
+
+channels:
+  - channel_id: mastodon-primary
+    platform: mastodon
+    max_length: 500
+    enabled: true
+  - channel_id: discord-announcements
+    platform: discord
+    max_length: 4096
+    enabled: true
+
+calendar:
+  events: []
+
+rss_feed_url: ""
