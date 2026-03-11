@@ -1,12 +1,21 @@
 profile_id: peer-audited--behavioral-blockchain
 display_name: "Styx Behavioral Market"
 organ: III
-repos: [peer-audited--behavioral-blockchain]
+repos:
+  - peer-audited--behavioral-blockchain
+  - styx-behavioral-economics-theory
+  - styx-behavioral-art
+
+pipeline:
+  theory_repo: organvm-i-theoria/styx-behavioral-economics-theory
+  art_repo: organvm-ii-poiesis/styx-behavioral-art
+  product_repo: organvm-iii-ergon/peer-audited--behavioral-blockchain
+  note: "First product to traverse full I→II→III organ chain"
 
 voice:
-  tone: technical
-  hashtags: ["#Styx", "#behavioral", "#blockchain", "#peeraudit", "#organvm"]
-  tagline: "Peer-audited behavioral market with on-chain accountability"
+  tone: technical-accessible
+  hashtags: ["#Styx", "#BehavioralEconomics", "#PeerAudit", "#Accountability", "#BuildInPublic", "#organvm"]
+  tagline: "Peer-audited behavioral accountability — where loss aversion meets game theory"
 
 platforms:
   mastodon:
@@ -29,7 +38,18 @@ channels:
     max_length: 4096
     enabled: true
 
+event_triggers:
+  - event: product.release
+    template: "🏛️ Styx v{version}: {summary} — peer-audited behavioral accountability. {url}"
+  - event: essay.published
+    template: "📝 New essay: {title} — exploring behavioral economics and accountability design. {url}"
+  - event: theory.updated
+    template: "🔬 Theory update: {summary} — behavioral economics foundations for Styx. {url}"
+
 calendar:
-  events: []
+  events:
+    - type: organ-chain-reset
+      date: "2026-03-11"
+      title: "Styx becomes first product to traverse full organ chain"
 
 rss_feed_url: ""
