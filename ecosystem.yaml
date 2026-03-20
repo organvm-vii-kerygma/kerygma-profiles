@@ -1,0 +1,25 @@
+schema_version: '1.0'
+repo: kerygma-profiles
+organ: VII
+display_name: "Kerygma Profiles — Per-project social identity profiles for multi-tenant distribution"
+
+delivery:
+- platform: python_library
+  status: live
+  priority: critical
+  notes: "23+ product profiles with social identity, tone, and channel configuration"
+  next_action: "Keep profiles current as products evolve"
+
+marketing:
+- platform: social_identity
+  status: live
+  priority: critical
+  notes: "Multi-tenant social identity registry consumed by all distribution tools"
+  next_action: "Add profiles for new products as they launch"
+
+content:
+- platform: docs_site
+  status: not_started
+  priority: medium
+  notes: "Profile format, identity fields, channel configuration reference"
+  next_action: "Document profile schema and authoring guide"
