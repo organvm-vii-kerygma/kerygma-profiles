@@ -10,6 +10,15 @@
       "value": "Multi-tenant social-identity control plane for the ORGANVM distribution layer — single source of truth for per-repo voice, channels, credentials, and cadence; enables one publishing pipeline to serve N products.",
       "first_task": "Ship profiles/profile.schema.json and wire `kerygma-profiles validate` into CI as a required gate, turning the produces->ORGAN-IV edge into a machine-checked contract.",
       "thesis": "DISCOVERY.md"
+    },
+    {
+      "repo": "organvm/styx-behavioral-economics-theory",
+      "promoted": "2026-06-22",
+      "source": "auto-discovery",
+      "tier": "foundation",
+      "value": "Holds the formal behavioral economics models, game-theoretic peer audit proofs, and core calibration constants (e.g., loss aversion λ = 1.955) that justify the spoof-resistance of the live Styx peer-audited behavioral blockchain.",
+      "first_task": "Publish a formal specification document derived from the game-theoretic accountability models to serve as the definitive trust anchor for the live Styx Commerce UI.",
+      "thesis": "DISCOVERY.md"
     }
   ]
 }
