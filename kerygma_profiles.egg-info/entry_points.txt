@@ -1,0 +1,2 @@
+[console_scripts]
+kerygma-profiles = kerygma_profiles.cli:main

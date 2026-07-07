@@ -1,0 +1,15 @@
+LICENSE
+README.md
+pyproject.toml
+kerygma_profiles/__init__.py
+kerygma_profiles/cli.py
+kerygma_profiles/registry.py
+kerygma_profiles/secrets.py
+kerygma_profiles.egg-info/PKG-INFO
+kerygma_profiles.egg-info/SOURCES.txt
+kerygma_profiles.egg-info/dependency_links.txt
+kerygma_profiles.egg-info/entry_points.txt
+kerygma_profiles.egg-info/requires.txt
+kerygma_profiles.egg-info/top_level.txt
+tests/test_registry.py
+tests/test_secrets.py
